@@ -167,7 +167,9 @@ button {  width: auto; overflow: visible; }
     font-size: 80%; 
 }
 
-
+body {
+    background: #eee;
+}
 
 
 

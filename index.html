@@ -18,9 +18,10 @@
   <!-- <link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'> -->
   
   <!-- CSS : implied media="all" -->
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=2" />
   <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print" /> 
+  <link rel="stylesheet" href="css/custom.css" type="text/css" /> 
 
   <script src="js/libs/modernizr-1.6.min.js"></script>
 
@@ -42,8 +43,15 @@
             <li>The Human Speechome Project</li>
             <li>Context-Sensitive Color Perception</li>
             <li>Trisk: Robot</li>
-            <li>Mimic: Architecture Design Optimization</li>
+            <li><a href="#" class="abstractToggler">Mimic</a>: Architecture Design Optimization</li>
           </ul>
+        </li>
+        
+        <li><strong>Photography</strong>
+        <ul>
+          <li><a href="http://blog.kubat.org">New Zealand</a></li>
+          <li><a href="http://www.flickr.com/photos/kubat/">Flickr</a></li>
+        </ul>
         </li>
     
         <li><strong>Science Advising</strong>
@@ -74,7 +82,42 @@
      <hr class="space">
      <p>Rony Kubat is a recent PhD graduate from MIT. His <a href="http://www.media.mit.edu/cogmac/">research</a>
         focus has been at the crossroads of computer science, artificial intelligence, and cognitive 
-        science&mdash;the modeling of human behavior in buildings in order to optimize their design performance. Rony has been <a
+        science&mdash;the modeling of human behavior in buildings in order to optimize their design performance. 
+        <span class="small">(<a href="#" class="quiet abstractToggler">Learn more.</a>)</span>
+     </p>
+        
+     <div class="small hidden" id="thesisAbstract">
+        <img src="images/thesisPlan1.png" width="100%">
+        <p><strong>The following is the abstract to Rony's doctoral thesis, entitled <em>Will they buy?</em>:</strong></p>
+          <p>The proliferation of inexpensive video recording hardware and enormous storage capacity has enabled 
+             the collection of retail customer behavior at an unprecedented scale. The vast majority of this data
+             is used for theft prevention and never used to better understand the customer. In what ways can this
+             huge corpus be leveraged to improve the experience of customer and the performance of the store?
+          </p>
+          <p>This thesis presents <i>Mimic</i>, a system that processes video captured in a retail store into
+             predictions about customer proclivity to purchase. <i>Mimic</i> relies on the observation that aggregate
+             patterns of all of a store's patrons---the gestalt---captures behavior indicative of an imminent
+             transaction. Video is distilled into a homogenous feature vector that captures the activity 
+             distribution by first tracking the locations of customers, then discretizing their movements into a
+             feature vector using a collection of <em>functional locations</em>---areas of the store relevant to the
+             tasks of patrons and employees. A time series of these feature vectors can then be classified as
+             predictive-of-transaction using a Hidden Markov Model.
+         </p>
+         <p><i>Mimic</i> is evaluated on a small operational retail store located in the Mall of America near
+            Minneapolis, Minnesota. Its performance is characterized across a wide cross-section of the model's
+            parameters. Through manipulation of the training data supplied to <i>Mimic</i>, the behavior of
+            customers in the store can be examined at fine levels of detail without foregoing the potential 
+            afforded by big data. 
+         </p>
+         <p><i>Mimic</i> enables a suite of valuable tools. For ethnographic researchers, it offers a technique
+            for identifying key moments in hundreds or thousands of hours of raw video. Retail managers gain a
+            fine-grained metric to evaluate the performance of their stores, and interior designers acquire a
+            critical component in a store layout optimization framework.
+         </p>
+     </div>
+    
+         
+     <p>Before graduate studies, Rony was a <a
         href="http://www.imdb.com/name/nm1211782/">science and technology advisor</a> for a number of Hollywood
         film productions, helping writers, directors, and production designers find technical authenticity and
         inspiration. Rony holds a Masters in Computer Science, a B.S.&nbsp;in Mechanical Engineering and a
@@ -85,14 +128,17 @@
         pacify a riot,” and is a member of the <a href="http://web.mit.edu/newsoffice/2002/junkyard-0612.html"
         title="Junkyard wars">Junkyard Wars</a> team, the Geeks (3rd Place, US Season three).</p>
         
+     <p>
+        Current CV (<a href="resources/rony.kubat.cv.pdf">pdf</a>).
+     </p>
     </div>
     
      <footer class="prepend-6 span-16 last quiet">
        <hr>
        <div class="span-8" style="text-align:left">
-         <span class="codedirection">ude.tim.aidem@tabuk</span>
+         <span class="codedirection">gro.tabuk@ynor</span>
        </div>
-       <div class="span-8 last" style="text-align:right">&copy;2011</div>
+       <div class="span-8 last" style="text-align:right">&copy;2012</div>
        <hr class="space">
     </footer>
   </div> <!--! end of #container -->

@@ -4,7 +4,7 @@ $(function(){
      .hide()
      .removeClass('hidden')
      .click(function(){
-       $(this).slideToggle('slow')
+       $(this).slideToggle('slow');
      })
 
    $('#thesisAbstract img').hover(
@@ -16,6 +16,11 @@ $(function(){
      });
 
    $('.abstractToggler').click(function (){
-     $('#thesisAbstract').slideToggle('slow')
+     var tract = $('#thesisAbstract');
+     tract.slideToggle('slow').promise().done(function (){
+       if (!tract.is(':visible')) {
+         $('html').animate({scrollTop: $('#thesisAbstract').offset().top},'slow');
+       }
+     })
    })
 });

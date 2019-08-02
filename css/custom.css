@@ -4,3 +4,7 @@
   border-width: medium;
   border-color: lightGray;
 }
+
+#main {
+  hyphens: auto;
+}
